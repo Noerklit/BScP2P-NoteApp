@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:NotetakingApp_Babette.Model"
+             x:Class="NotetakingApp_Babette.Pages.MainPage">
+
+    <ScrollView>
+
+
+        <VerticalStackLayout BackgroundColor="Black">
+            
+            <Border>
+                <Label
+                    FontAttributes="Bold"
+                    FontAutoScalingEnabled="false"
+                    FontSize="50"
+                    Text="PRIVATE THOUGHTS"
+                    TextColor="White"
+                    x:Name="privateThoughts"
+                    HeightRequest="142"
+                    WidthRequest="327"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+             </Border>
+
+            <!--<control:floatingButton floatingButton        />-->
+            <HorizontalStackLayout
+            Spacing="10"
+            x:Name="notes1"
+            HeightRequest="240"
+            WidthRequest="327"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+                <Border
+                StrokeShape="RoundRectangle 0 24 24 24">
+                    <HorizontalStackLayout
+                    Background="#ddefe8"
+                    Spacing="10"
+                    x:Name="note1"
+                    HeightRequest="240"
+                    WidthRequest="160">
+                        <Label
+                        FontAttributes="Bold"
+                        FontAutoScalingEnabled="false"
+                        FontSize="20"
+                        Text="GROCERIES"
+                        x:Name="groceries"
+                        HeightRequest="24"
+                        WidthRequest="140"/>
+                        <Label
+                        FontAutoScalingEnabled="false"
+                        FontSize="20"
+                        Text="Eggs
+                        Noodles
+                        Carrots"
+                        x:Name="eggsNoodlesCarrots"
+                        HeightRequest="143"
+                        WidthRequest="127"/>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border
+                StrokeShape="RoundRectangle 24 24 24 0">
+                    <HorizontalStackLayout
+                    Background="#a0dcff"
+                    Spacing="10"
+                    Padding="10"
+                    x:Name="note2"
+                    HeightRequest="240"
+                    WidthRequest="160"/>
+                </Border>
+            </HorizontalStackLayout>
+            <Border
+            StrokeShape="RoundRectangle 24 24 24 24">
+                <VerticalStackLayout
+                Background="#e3e48d"
+                Spacing="10"
+                x:Name="note3"
+                HeightRequest="80"
+                WidthRequest="330"/>
+            </Border>
+            <HorizontalStackLayout
+            Spacing="10"
+            x:Name="notes2"
+            HeightRequest="240"
+            WidthRequest="327"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+                <Border
+                StrokeShape="RoundRectangle 0 24 24 24">
+                    <HorizontalStackLayout
+                    Background="#ddefe8"
+                    Spacing="10"
+                    x:Name="note4"
+                    HeightRequest="240"
+                    WidthRequest="160">
+                  
+                    </HorizontalStackLayout>
+                </Border>
+                <Border
+                StrokeShape="RoundRectangle 24 24 24 0">
+                    <HorizontalStackLayout
+                    Background="#a0dcff"
+                    Spacing="10"
+                    Padding="10"
+                    x:Name="note5"
+                    HeightRequest="240"
+                    WidthRequest="160"/>
+                </Border>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+            Spacing="10"
+            x:Name="categories"
+            HeightRequest="40"
+            WidthRequest="327"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+
+                <!--<control:categoryChip categoryChip            />
+
+                <control:categoryChip categoryChip            />
+
+                <control:categoryChip categoryChip            />-->
+            </HorizontalStackLayout>
+
+
+            <!--<control:menuButton menuButton        />-->
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+
+
+
+    <!--<ScrollView>
+        <VerticalStackLayout>
+            <Label
+                    FontAttributes="Bold"
+                    FontAutoScalingEnabled="false"
+                    FontSize="64"
+                    Text="PRIVATE THOUGHTS"
+                    TextColor="Black"
+                    x:Name="privateThoughts"
+                    HeightRequest="142"
+                    WidthRequest="327"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+        </VerticalStackLayout>
+    </ScrollView>-->
+    
+    
+    
+
+</ContentPage>
